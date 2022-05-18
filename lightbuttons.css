@@ -1,0 +1,468 @@
+
+.box2 {
+    width: 450px;
+    height: 150px;
+    margin: 10px;
+    
+    position: relative;
+}
+
+.lightbutton2 {
+    color: #d9d9d9;
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border: none;
+    padding: 5px 5px;
+    background-color: #3B83F6;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 6px 6px 0  #0659DD;
+    transition: all .15s linear 0s;
+
+
+}
+
+.lightbutton2:hover {
+    top: 3px;
+    left: 3px;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 3px 3px 0  #0659DD;
+
+    
+}
+.lightbutton2::before{
+    content: ' ';
+    width: 6px;
+    height: 12px;
+    border-radius: 3px;
+    left: 4px;
+    z-index:-1;
+    bottom: -5px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+    transition: all .15s linear 0s;
+
+  
+}
+.lightbutton2::after {
+    content: ' ';
+    width: 13px;
+    height:4px;
+    right: -6px;
+    border-radius: 3px;
+    z-index:-1;
+    top: 4px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+    transition: all .15s linear 0s;
+
+  
+}
+
+.lightbutton2:hover::after {
+    
+    content: ' ';
+    width: 8px;
+    height:2px;
+    right: -3px;
+    border-radius: 3px;
+    z-index:-1;
+    top: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+   
+    
+}
+.lightbutton2:hover::before {
+    content: ' ';
+    width: 2px;
+    height: 8px;
+    border-radius: 3px;
+    left: 3px;
+    z-index:-1;
+    bottom: -3px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background:#0659DD;
+}
+
+.lightbutton2:focus, .lightbutton2.focus {
+
+    color: #d4d4d4;
+    background-color: #1E40AF;
+    top: 6px;
+    left: 6px;
+    outline: none;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 0px 0px 0  #0659DD;
+
+    /* box-shadow: 0 0 0 0.5rem rgba(0, 136, 255, 0.5); */
+}
+.lightbutton2:focus::after, .lightbutton2.focus::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 3px;
+    right: 1px;
+    z-index:-1;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+}
+.lightbutton2:focus::before, .lightbutton2.focus::before {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    border-radius: 3px;
+    z-index:-1;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+}
+
+.lightbutton2.disabled, .lightbutton2:disabled {
+    color: #a3a3a3;
+    background-color: #1E40AF;
+    border-color: red;
+}
+.lightbutton2:not(:disabled):not(.disabled):active {
+    color: #d4d4d4;
+    background-color: #1E40AF;
+    top: 6px;
+    left: 6px;
+    outline: none;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 0px 0px 0  #0659DD;
+}
+.lightbutton2:not(:disabled):not(.disabled):active::after{
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 3px;
+    right: 1px;
+    z-index:-1;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+}
+.lightbutton2:not(:disabled):not(.disabled):active::before{
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    border-radius: 3px;
+    z-index:-1;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+}
+
+.lightbutton2:not(:disabled):not(.disabled).active  {
+
+}
+
+.show > .lightbutton2.dropdown-toggle {
+
+}
+
+.lightbutton1 {
+    color: #d9d9d9;
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border: none;
+    padding: 5px 5px;
+    background-color: #3B83F6;
+    display: inline-block;
+    position: relative;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 6px 6px 0  #0659DD;
+    transition: all .15s linear 0s;
+
+
+}
+
+.lightbutton1:hover {
+    top: 3px;
+    left: 3px;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 3px 3px 0  #0659DD;
+
+    
+}
+.lightbutton1::before{
+    content: ' ';
+    width: 6px;
+    height: 8px;
+    border-radius: 0px;
+    left: 2px;
+    z-index:-1;
+    bottom: -5px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+    transition: all .15s linear 0s;
+
+  
+}
+.lightbutton1::after {
+    content: ' ';
+    width: 8px;
+    height:6px;
+    right: -5px;
+    border-radius: 0px;
+    z-index:-1;
+    top: 2px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+    transition: all .15s linear 0s;
+
+  
+}
+
+.lightbutton1:hover::after {
+    
+    content: ' ';
+    width: 4px;
+    height:4px;
+    right: -2px;
+    border-radius: 0px;
+    z-index:-1;
+    top: 1px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+   
+    
+}
+.lightbutton1:hover::before {
+    content: ' ';
+    width: 4px;
+    height: 4px;
+    border-radius: 0px;
+    left: 1px;
+    z-index:-1;
+    bottom: -2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background:#0659DD;
+}
+
+.lightbutton1:focus, .lightbutton1.focus {
+
+    color: #d4d4d4;
+    background-color: #1E40AF;
+    top: 6px;
+    left: 6px;
+    outline: none;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 0px 0px 0  #0659DD;
+
+    /* box-shadow: 0 0 0 0.5rem rgba(0, 136, 255, 0.5); */
+}
+.lightbutton1:focus::after, .lightbutton1.focus::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    right: 0;
+    z-index:-1;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+}
+.lightbutton1:focus::before, .lightbutton1.focus::before {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    left: 0;
+    z-index:-1;
+    bottom: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+}
+
+.lightbutton1.disabled, .lightbutton1:disabled {
+    color: #a3a3a3;
+    background-color: #1E40AF;
+    border-color: red;
+}
+
+.lightbutton1:not(:disabled):not(.disabled):active, .lightbutton1:not(:disabled):not(.disabled).active, .show > .lightbutton1.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: #1E40AF;
+    background-position: 0%;
+    top: 6px;
+    left: 6px;
+    border-right: none;
+    /* box-shadow: 0 0 0 1px hsl(210, 6%, 21%) inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0 #dcdcdc, 0 2px 0 1px rgba(0, 0, 0, 0.4), 0 2px 4px 1px rgba(0, 0, 0, 0.5); */
+}
+
+
+
+
+
+.lightbutton3 {
+    color: #d9d9d9;
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border: none;
+    padding: 5px 5px;
+    background-color: #3B83F6;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 3px 3px 0  #0659DD;
+    transition: all .15s linear 0s;
+
+
+}
+
+.lightbutton3:hover {
+  
+   background: #60A5FA;
+    
+}
+.lightbutton3::before{
+    content: ' ';
+    width: 5px;
+    height: 9px;
+    border-radius: 3px;
+    left: 3px;
+    z-index:-1;
+    bottom: -3px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background:#0659DD;
+    transition: all .15s linear 0s;
+
+  
+}
+.lightbutton3::after {
+    content: ' ';
+    width: 8px;
+    height:2px;
+    right: -3px;
+    border-radius: 3px;
+    z-index:-1;
+    top: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+    transition: all .15s linear 0s;
+    
+
+  
+}
+
+.lightbutton3:hover::after {
+    
+    content: ' ';
+    width: 8px;
+    height:2px;
+    right: -3px;
+    border-radius: 3px;
+    z-index:-1;
+    top: 3px;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+   
+    
+}
+.lightbutton3:hover::before {
+    content: ' ';
+    width: 2px;
+    height: 8px;
+    border-radius: 3px;
+    left: 3px;
+    z-index:-1;
+    bottom: -3px;
+    transform: rotate(-45deg);
+    position: absolute;
+    background:#0659DD;
+}
+/* .lightbutton3:focus, .lightbutton3.focus {
+
+    color: #d4d4d4;
+    background-color: #1E40AF;
+    top: 3px;
+    left: 3px;
+    outline: none;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 0px 0px 0  #0659DD;
+}
+.lightbutton3:focus::after, .lightbutton3.focus::after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 3px;
+    right: 1px;
+    z-index:-1;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+}
+.lightbutton3:focus::before, .lightbutton3.focus::before {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    border-radius: 3px;
+    z-index:-1;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+} */
+
+.lightbutton3.disabled, .lightbutton3:disabled {
+    color: #a3a3a3;
+    background-color: #1E40AF;
+    border-color: red;
+}
+.lightbutton3:not(:disabled):not(.disabled):active {
+    color: #d4d4d4;
+    background-color: #1E40AF;
+    top: 3px;
+    left: 3px;
+    outline: none;
+    box-shadow: 1px 1px 1px 0 inset #2563EB75, 0px 0px 0  #0659DD;
+}
+.lightbutton3:not(:disabled):not(.disabled):active::after{
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-radius: 3px;
+    top: 0;
+    right: 4px;
+    z-index:-1;
+    transform: rotate(45deg);
+    position: absolute;
+    background: #0659DD;
+}
+.lightbutton3:not(:disabled):not(.disabled):active::before{
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    border-radius: 3px;
+    z-index:-1;
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #0659DD;
+}
+
+.lightbutton3:not(:disabled):not(.disabled).active  {
+
+}
+
+.show > .lightbutton3.dropdown-toggle {
+
+}
